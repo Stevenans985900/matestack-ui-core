@@ -23,7 +23,7 @@ group :development, :test do
   gem 'webpacker', '~> 4.0'
   gem 'sqlite3', '~> 1.3.13'
   gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
-  gem 'puma'
+  gem 'puma', '>= 4.3.5'
   gem 'simplecov', require: false, group: :test
   gem 'byebug'
   gem 'pry-byebug'
