@@ -14,13 +14,13 @@ gemspec
 gem "trailblazer"
 gem "trailblazer-rails"
 gem "trailblazer-cells"
-gem "cells-rails"
+gem "cells-rails", ">= 0.1.0"
 gem "cells-haml"
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
   gem 'capybara'
-  gem 'webpacker', '~> 4.0'
+  gem 'webpacker', '~> 4.2', '>= 4.2.2'
   gem 'sqlite3', '~> 1.3.13'
   gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
   gem 'puma'
@@ -33,7 +33,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "generator_spec"
+  gem "generator_spec", ">= 0.9.4"
   gem "rspec-retry" # repeating flaky tests
   gem "rspec-wait", "~> 0.0.9"
 end
